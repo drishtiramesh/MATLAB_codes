@@ -5,7 +5,7 @@ set(vid, 'ReturnedColorspace', 'rgb');
 %vid.FrameRate =30;
 vid.FrameGrabInterval = 1;  % distance between captured frames 
 start(vid)
-path='C:\Users\Drishti\Desktop\matlabpics\file.avi';
+path='file.avi';
 vidWriter = VideoWriter(path);
 open(vidWriter);
 
