@@ -1,4 +1,4 @@
-f=imread('C:\Users\Drishti\Desktop\matlabpics\veg.tiff');
+f=imread('veg.tiff');
 f1=imadd(f,20);
 f2=imadd(f,100);
 f3=imsubtract(f,60);
@@ -17,8 +17,8 @@ imshow(f1);
 title('Darken by 30');
 %Save those images
 %{
-imwrite(f1,'C:\Users\Drishti\Pictures\database\db1.jpg');
-imwrite(f2,'C:\Users\Drishti\Pictures\database\db2.jpg');
-imwrite(f3,'C:\Users\Drishti\Pictures\database\db3.jpg');
-imwrite(f4,'C:\Users\Drishti\Pictures\database\db4.jpg');
+imwrite(f1,'db1.jpg');
+imwrite(f2,'db2.jpg');
+imwrite(f3,'db3.jpg');
+imwrite(f4,'db4.jpg');
 %}
