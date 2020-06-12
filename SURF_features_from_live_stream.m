@@ -9,7 +9,7 @@ path='file.avi';
 vidWriter = VideoWriter(path);
 open(vidWriter);
 
-for iFrame = 1:10                    % Capture 100 frames
+for iFrame = 1:10                    %no of frames to be captured
   % ...
   % You would capture a single image I from your webcam here
   % ...
@@ -21,10 +21,9 @@ for iFrame = 1:10                    % Capture 100 frames
   imshow(img);
   hold on;
   plot(ref_pts.selectStrongest(50));
- %imshow(I);
- % Write frame to video
+ 
  writeVideo(vidWriter, img);  
 end
-close(vidWriter);        % Close the AVI file
+close(vidWriter);        
 stop(vid);
 
