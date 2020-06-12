@@ -1,5 +1,5 @@
-f=imread('C:\Users\Drishti\Desktop\matlabpics\veg.tiff');
-g=imread('C:\Users\Drishti\Desktop\matlabpics\cameraman.tiff');
+f=imread('veg.tiff');
+g=imread('cameraman.tiff');
 
 [r c b]=size(f);
 %Resizing image 1 according to dimension of image 2
